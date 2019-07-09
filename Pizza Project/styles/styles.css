@@ -1,0 +1,61 @@
+body {
+    color: coral;
+    background-color: slategray;
+    font-family: inherit;
+    margin: 0%;
+}
+
+.container {
+    font-size: 18px;
+    border: 3px solid;
+    background-color: darkred;
+}
+
+h1 {
+    text-align: left;
+    line-height: 0.5em;
+}
+
+h4 {
+    text-align: left;
+    font-size: 24px;
+    line-height: 0.5em;
+}
+
+h6 {
+    font-style: italic;
+    line-height: 0.5em;
+}
+
+.size-ingredient, .crust-ingredient, .sauce-ingredient, .chz-ingredient, .meat-ingredient, .veg-ingredient {
+    font-size: 10px;
+    line-height: 0.5em;
+    
+}
+
+.ingredient {
+    padding: 2px;
+}
+
+.receipt {
+    border: 3px solid coral;
+    font-size: 16px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 2px 4px;
+    text-align: center;
+    float: center;
+    
+}
+
+.receipt, h2 {
+    text-align: center;
+    font-family: monospace;
+}
+
+.button {
+    background-color: coral;
+    float: center;
+    text-align: center;
+    box-sizing: border-box;
+}

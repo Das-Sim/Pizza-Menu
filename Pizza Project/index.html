@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Take-out Menu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/styles.css">     
+    </head>
+    <body>
+        <div class="container">
+            <h1>Online Take-out Menu</h1>
+        </div>
+        
+        <!--Menu Items-->
+        
+        <div class="container">
+            <div class="pizza">
+                <div class="size-ingredient">
+                    <h4>Pizza Size:</h4>
+                    <input type="radio" name="pizza-size" value="Personal" checked>Personal</input>
+                    <input type="radio" name="pizza-size" value="Medium">Medium</input>
+                    <input type="radio" name="pizza-size" value="Large">Large</input>
+                    <input type="radio" name="pizza-size" value="Extra Large">Extra Large</input>
+                </div>
+                <div class="crust-ingredient">
+                    <h4>Crust Type:</h4>
+                    <input type="radio" name="crust-type" value="Plain Crust" checked>Plain Crust</input>
+                    <input type="radio" name="crust-type" value="Garlic Butter Crust">Garlic Butter Crust</input>
+                    <input type="radio" name="crust-type" value="Chz Stuffed Crust">Cheese Stuffed Crust</input>
+                    <input type="radio" name="crust-type" value="Spicy Crust">Spicy Crust</input>
+                    <input type="radio" name="crust-type" value="House Stuffed Crust">House Stuffed Crust</input>
+                </div>
+                <div class="sauce-ingredient">
+                    <h4>Sauce:</h4>
+                    <input type="radio" name="sauce-type" value="Marinara Sauce" checked>Marinara Sauce</input>
+                    <input type="radio" name="sauce-type" value="White Sauce">White Sauce</input>
+                    <input type="radio" name="sauce-type" value="Barbeque Sauce">Barbeque Sauce</input>
+                    <input type="radio" name="sauce-type" value="No Sauce">No Sauce</input>
+                </div>
+
+                <div class="chz-ingredient">
+                    <h4>Cheese:</h4>
+                    <input type="radio" name="chz-type" value="Regular" checked>Regular Cheese</input>
+                    <input type="radio" name="chz-type" value="Extra Chz">Extra Cheese (+$3)</input>
+                    <input type="radio" name="chz-type" value="No Chz">No Cheese</input>
+                </div>
+                <div class="meat-ingredient">
+                    <h4>Meat:</h4>
+                    <h6>Pick one or get extra for $1 per meat.</h6>
+                    <input type="checkbox" name="meat-type" value="Pepperoni">Pepperoni</input>
+                    <input type="checkbox" name="meat-type" value="Sausage">Sausage</input>
+                    <input type="checkbox" name="meat-type" value="Canadian Bacon">Canadian Bacon</input>
+                    <input type="checkbox" name="meat-type" value="Ground Beef">Ground Beef</input>
+                    <input type="checkbox" name="meat-type" value="Chicken">Chicken</input>
+                    <input type="checkbox" name="meat-type" value="Anchovy">Anchovy</input>
+                </div>
+                <div class="veg-ingredient">
+                    <h4>Veggies</h4>
+                    <h6>Pick one or get extra for $1 per veggie.</h6>
+                    <input type="checkbox" name="veg-type" value="Tomatoes">Tomatoes</input>
+                    <input type="checkbox" name="veg-type" value="Onions">Onions</input>
+                    <input type="checkbox" name="veg-type" value="Olives">Olives</input>
+                    <input type="checkbox" name="veg-type" value="Green Peppers">Green Peppers</input>
+                    <input type="checkbox" name="veg-type" value="Mushrooms">Mushrooms</input>
+                    <input type="checkbox" name="veg-type" value="Pineapple">Pineapple</input>
+                    <input type="checkbox" name="veg-type" value="Spinach">Spinach</input>
+                    <input type="checkbox" name="veg-type" value="Jalapenos">Jalapenos</input>
+                </div>
+
+                <br>
+
+                <!--I love buttons-->
+            <div class="button">
+                <button type="button" onClick="submit()" id="submitbutton">Order</button>
+        </div>
+
+             </div>
+        </div>
+
+        <!--Menu Items-->
+
+        <!--Receipt-->
+
+        <div class="container">
+            <div class="receipt">
+                <div class="receipt-header">
+                    <h2>Receipt</h2>
+                </div>
+                <div class="receipt-body">
+                    <div class="receipt-item size-receipt">
+                        <div class="receipt-pizza-size" id="receipt-pizza-size"></div>
+                        <div class="cost"></div>
+                    </div>
+                    <div class="receipt-item crust-type">
+                        <div class="receipt-crust" id="crust-type"></div>
+                        <div class="cost"></div>
+                    </div>
+                    <div class="receipt-item">
+                        <div class="sauce-receipt" id="sauce-receipt"></div>
+                        <div class="cost sauce-cost"></div>
+                    </div>
+                    <div class="receipt-item">
+                        <div class="chz-receipt" id="chz-receipt"></div>
+                        <div class="cost chz-cost"></div>
+                    </div>
+                    <div class="receipt-item">
+                        <div class="meat-receipt" id="meat-receipt"></div>
+                        <div class="cost meat-cost"></div>
+                    </div>
+                    <div class="receipt-item">
+                        <div class="veg-receipt" id="veg-receipt"></div>
+                        <div class="cost veg-cost" id="test"></div>
+                    </div>
+                </div>
+                <div class="total" id="total"></div>
+            </div>
+            
+            <!--Receipt-->
+            
+            </div>
+        </div>
+        <script src="js/main.js">
+        </script>
+    </body>
+</html>
